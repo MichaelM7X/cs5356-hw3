@@ -15,11 +15,16 @@ header {
     transition: background-color 0.3s ease;
 }
 
-/* Bio Section */
+/* Bio Section (Fix Image Size & Layout) */
 .bio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
     margin: 20px auto;
     padding: 20px;
-    max-width: 600px;
+    max-width: 900px;
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(10px);
     border-radius: 10px;
@@ -27,9 +32,9 @@ header {
 }
 
 .profile-pic {
-    width: 150px;
-    border-radius: 50%;
-    margin-bottom: 10px;
+    width: 200px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 /* Fun Feature Section */
@@ -39,6 +44,12 @@ header {
     background: white;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.fun-feature img {
+    max-width: 100%;
+    border-radius: 10px;
 }
 
 /* New HTML Element */
@@ -80,12 +91,17 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 600px) {
-    .bio, .fun-feature, .new-html-element {
-        width: 90%;
-        margin: auto;
+    .bio {
+        flex-direction: column;
+        text-align: center;
     }
 
     .profile-pic {
-        width: 100px;
+        width: 150px;
+    }
+
+    .fun-feature, .new-html-element {
+        width: 90%;
+        margin: auto;
     }
 }
