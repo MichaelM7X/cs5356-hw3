@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- 🌟 Open Graph Meta Tags for Social Media Link Previews -->
+    <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Michael Meng - Portfolio">
     <meta property="og:description" content="Explore my work in AI, frontend development, and design!">
     <meta property="og:image" content="https://michaelm7x.github.io/cs5356-hw3/img/profile.jpg">
@@ -13,25 +13,8 @@
     <meta property="og:url" content="https://michaelm7x.github.io/cs5356-hw3/">
     <meta property="og:type" content="website">
 
-    <!-- 🌟 Twitter Card Meta Tags (for Twitter/X) -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Michael Meng - Portfolio">
-    <meta name="twitter:description" content="Explore my work in AI, frontend development, and design!">
-    <meta name="twitter:image" content="https://michaelm7x.github.io/cs5356-hw3/img/profile.jpg">
-    <meta name="twitter:site" content="@YourTwitterHandle">
-
     <title>Michael Meng | Personal Site</title>
     <link rel="stylesheet" href="style.css">
-
-    <!-- ✅ Google Analytics Tracking -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CK9DP40Q1F"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-CK9DP40Q1F');
-    </script>
 </head>
 <body>
     <header>
@@ -40,17 +23,31 @@
 
     <section class="bio">
         <img src="img/profile.jpg" alt="Michael Meng" class="profile-pic">
-        <p>Hi, I'm Michael Meng, a CS5356 student passionate about frontend development and AI. Welcome to my personal homepage!</p>
+        <p>Hi, I'm Michael Meng, a CS5356 student passionate about frontend development and AI.</p>
     </section>
 
     <section class="fun-feature">
         <h2>Random Dog Image</h2>
         <img id="random-dog" src="" alt="Random Dog">
-        <button onclick="fetchNewDog()">Get a New Dog</button>
+        <button id="dog-button">Get a New Dog</button>
+    </section>
+
+    <section class="projects">
+        <h2>My Projects</h2>
+        <ul>
+            <li>⚙️ <b>AI-Powered Web Apps</b> – Using ML to enhance UX</li>
+            <li>📊 <b>Data Analytics Dashboards</b> – Interactive visualizations</li>
+            <li>🎨 <b>Creative UX/UI Experiments</b> – Stunning user interfaces</li>
+        </ul>
+    </section>
+
+    <section class="photography">
+        <h2>📸 Photography</h2>
+        <p>I love capturing moments! Follow me on Instagram for my latest shots.</p>
     </section>
 
     <footer>
-        <p>&copy; 2025 Michael Meng</p>
+        <p>© 2025 Michael Meng. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>

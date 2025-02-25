@@ -5,37 +5,60 @@ body {
     padding: 0;
     text-align: center;
     background-color: #f4f4f4;
+    background-image: url('img/background.jpg');
+    background-size: cover;
+    background-attachment: fixed; /* Keeps background fixed */
 }
 
 /* Header */
 header {
-    background-color: #333;
+    background-color: #8B0000; /* Cornell Red */
     color: white;
     padding: 20px;
-    transition: background-color 0.3s ease;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-/* Bio Section (Fix Image Size & Layout) */
+/* Bio Section */
 .bio {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin: 20px auto;
     padding: 20px;
-    max-width: 900px;
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Profile Picture (Zoomed Out, Circular) */
 .profile-pic {
-    width: 200px;
-    border-radius: 10px;
+    width: 180px;  /* Slightly bigger for zoom-out effect */
+    height: 180px;
+    border-radius: 50%;
     object-fit: cover;
+    object-position: center; /* Moves image to reveal more face */
+    transition: box-shadow 0.3s ease-in-out;
 }
+
+/* Hover Glow Effect */
+.profile-pic:hover {
+    box-shadow: 0px 0px 15px rgba(65, 105, 225, 0.8);
+}
+
+/* Magic Mouse Trail */
+.trail {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    animation: fadeOut 0.5s ease-out;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
 
 /* Fun Feature Section */
 .fun-feature {
@@ -47,38 +70,65 @@ header {
     max-width: 600px;
 }
 
-.fun-feature img {
+#random-dog {
     max-width: 100%;
     border-radius: 10px;
 }
 
-/* New HTML Element */
-.new-html-element {
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 600px;
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Button */
-button {
+#dog-button {
+    display: block;
+    margin: 10px auto;
     padding: 12px 20px;
     font-size: 16px;
     font-weight: bold;
-    border: none;
-    background-color: #007BFF;
+    background-color: royalblue;
     color: white;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    width: 200px;
 }
 
-button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
+#dog-button:hover {
+    background-color: darkblue;
+}
+
+/* Projects Section */
+.projects {
+    background: #FF8C00; /* Sunset Orange */
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left;  /* Ensures left alignment */
+}
+
+.projects h2 {
+    text-align: center; /* Title also left-aligned */
+    margin-left: 20px;
+}
+
+.projects ul {
+    padding-left: 40px; /* Moves bullets correctly */
+}
+
+.projects li {
+    margin-bottom: 10px;
+}
+
+/* Photography Section */
+.photography {
+    background: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.photography h2 {
+    text-align: center;
 }
 
 /* Footer */
@@ -87,21 +137,4 @@ footer {
     color: white;
     padding: 10px;
     margin-top: 20px;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    .bio {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .profile-pic {
-        width: 150px;
-    }
-
-    .fun-feature, .new-html-element {
-        width: 90%;
-        margin: auto;
-    }
 }
