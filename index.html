@@ -4,30 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Open Graph Meta Tags for Link Preview -->
-    <meta property="og:title" content="Michael Meng - Personal Portfolio">
+    <!-- 🌟 Open Graph Meta Tags for Link Previews (Facebook, Discord, LinkedIn, etc.) -->
+    <meta property="og:title" content="Michael Meng - Portfolio">
     <meta property="og:description" content="Explore my work in AI, frontend development, and design!">
-    <meta property="og:image" content="img/profile.jpg">
+    <meta property="og:image" content="https://michaelm7x.github.io/cs5356-hw3/img/profile.jpg">
     <meta property="og:url" content="https://michaelm7x.github.io/cs5356-hw3/">
+    <meta property="og:type" content="website">
+    
+    <!-- 🌟 Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Michael Meng - Portfolio">
+    <meta name="twitter:description" content="Explore my work in AI, frontend development, and design!">
+    <meta name="twitter:image" content="https://michaelm7x.github.io/cs5356-hw3/img/profile.jpg">
+    <meta name="twitter:site" content="@YourTwitterHandle">  <!-- Optional: Replace with your Twitter handle -->
 
     <title>Michael Meng | Personal Site</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="main.js"></script>
-
-    <!-- Google Analytics (Replace with your Google Analytics ID) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){ dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');  // Replace with your Google Analytics ID
-    </script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header class="s-header">
-        <h1>Welcome to My Website</h1>
+    <header>
+        <h1>Welcome to My Homepage</h1>
     </header>
 
     <section class="bio">
@@ -41,17 +37,10 @@
         <button onclick="fetchNewDog()">Get a New Dog</button>
     </section>
 
-    <section class="new-html-element">
-        <h2>Fun Fact About Me</h2>
-        <details>
-            <summary>Click to reveal!</summary>
-            <p>I love Chelsea FC, Bayern Munich, and Real Madrid. ⚽🔥</p>
-        </details>
-    </section>
-
     <footer>
         <p>&copy; 2025 Michael Meng</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
