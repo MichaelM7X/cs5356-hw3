@@ -13,15 +13,27 @@
     <meta property="og:url" content="https://michaelm7x.github.io/cs5356-hw3/">
     <meta property="og:type" content="website">
 
+    <!-- ✅ Added fb:app_id to Fix Debugger Warning -->
+    <meta property="fb:app_id" content="YOUR_FACEBOOK_APP_ID"> <!-- Replace with real App ID -->
+
     <!-- 🌟 Twitter Card Meta Tags (for Twitter/X) -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Michael Meng - Portfolio">
     <meta name="twitter:description" content="Explore my work in AI, frontend development, and design!">
     <meta name="twitter:image" content="https://michaelm7x.github.io/cs5356-hw3/img/profile.jpg">
-    <meta name="twitter:site" content="@YourTwitterHandle"> <!-- Optional -->
+    <meta name="twitter:site" content="@YourTwitterHandle">
 
     <title>Michael Meng | Personal Site</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- ✅ Google Analytics Tracking -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX'); // Replace with your Google Analytics ID
+    </script>
 </head>
 <body>
     <header>
