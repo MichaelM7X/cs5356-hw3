@@ -93,7 +93,7 @@ Then, navigate to `http://localhost:3000/` (or the displayed port).
 ## **👨‍💻 Author**
 👤 **Michael Meng**  
 📍 CS5356 Student | Passionate about AI & Frontend Development  
-📧 [Contact Me](mailto:mzm27@cornell.com)  
+📧 [Contact Me](mailto:mzm27@cornell.edu)  
 
 ---
 
