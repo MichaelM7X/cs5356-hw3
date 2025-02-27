@@ -130,7 +130,7 @@ header {
     text-align: center;
 }
 
-/* Style for details dropdown */
+/* Style for details dropdown (the 3 sports) */
 details {
     background: rgba(255, 255, 255, 0.1);
     color: white;
@@ -142,9 +142,17 @@ details {
     transition: all 0.3s ease-in-out;
 }
 
+/* Distinct style for the explanation details */
+.info-details {
+    background: rgba(255, 255, 255, 0.25);
+}
+
 /* When details are expanded */
 details[open] {
     background: rgba(255, 255, 255, 0.2);
+}
+.info-details[open] {
+    background: rgba(255, 255, 255, 0.3);
 }
 
 /* Style the summary (clickable part) */
